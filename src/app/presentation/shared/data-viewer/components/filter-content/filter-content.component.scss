@@ -1,0 +1,38 @@
+// /* Asegura que el contenedor general use flex para controlar el tamaño */
+// .main-container-wrapper {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 1rem;
+// }
+
+// /* Ajusta el tamaño de los contenedores para la tabla y los filtros */
+// .lg\:col-7 {
+//     flex: 1 0 70%; /* Tabla de resultados */
+// }
+
+// .lg\:col-4 {
+//     flex: 1 0 28%; /* Contenedor de filtros */
+// }
+
+// /* Asegura que el filtro ocupe toda la altura del contenedor */
+// .card {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+// }
+
+// .app-filter-form {
+//     flex-grow: 1; /* El filtro debe ocupar todo el espacio restante */
+//     overflow-y: auto; /* Evita que se desborde si es necesario */
+// }
+
+// .card .-mt-3 {
+//     margin-top: -1rem; /* Ajusta el margen para evitar solapamientos */
+// }
+
+// /* Evita que haya overflow en el filtro */
+// .app-filter-content {
+//     max-height: 100%;
+//     overflow-y: auto; /* Solo si el contenido se desborda */
+//     padding-right: 0.5rem; /* Ajusta padding para evitar barra de scroll */
+// }

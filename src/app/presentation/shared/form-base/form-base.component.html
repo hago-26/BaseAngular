@@ -1,0 +1,12 @@
+<div class="grid justify-content-center main-container-wrapper gap-1" >
+    <div class="col-12 md:col-12 lg:12">
+        <app-form-handler [FormBase]="FormBase" class="col-9"></app-form-handler>
+
+        <div class="col-3 justify-items-center card">
+            <div class="flex justify-content-center flex-wrap gap-1">
+                <button pButton class="btn btn-primary" (click)="sendForm()">Guardar</button>
+                <button pButton class="btn btn-secondary" (click)="resetForm()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

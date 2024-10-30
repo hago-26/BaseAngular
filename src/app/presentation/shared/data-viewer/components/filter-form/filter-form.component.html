@@ -1,0 +1,107 @@
+<hr>
+
+<div class="formgrid">
+    <!-- ORDEN -->
+    <h6 class="m-0 font-bold">Ordenar</h6> <br>
+    <div class="grid justify-content-center">
+        <div class="justify-content-center">
+            <p-selectButton class="col-12" id="ordenar" [options]="paymentOptions" [(ngModel)]="valSelect1" optionLabel="name"></p-selectButton>
+        </div>
+    </div>
+
+    
+    <!-- FILTROS -->
+    <hr>
+    <h6 class="m-0 font-bold">Filtrar Propiedades</h6> <br>
+    <div class="grid justify-content-center">
+        <div class="col-12">
+            <p-floatLabel >
+                <p-dropdown 
+                    [options]="paymentOptions" 
+                    [style]="{'width':'100%'}" 
+                    optionLabel="name" 
+                    placeholder="Select a City" />
+                <label for="username">Opciones</label>
+            </p-floatLabel>      
+        </div>
+        <div class="col-12">
+            <p-floatLabel>
+                <p-dropdown 
+                    [options]="paymentOptions" 
+                    [style]="{'width':'100%'}" 
+                    optionLabel="name" 
+                    placeholder="Select a City" />
+                <label for="username">Opciones</label>
+            </p-floatLabel>
+        </div>
+
+        <div class="col-12 lg:col-6 xl:col-6">
+            <p-floatLabel>
+                <p-calendar 
+                    [showIcon]="true" 
+                    [showOnFocus]="false" 
+                    inputId="buttondisplay" />
+                <label for="username">Min</label>
+            </p-floatLabel>      
+        </div>
+
+        <div class="col-12 lg:col-6 xl:col-6">
+            <p-floatLabel>
+                <p-calendar 
+                    [showIcon]="true" 
+                    [showOnFocus]="false" 
+                    inputId="buttondisplay" />
+                <label for="username">Max</label>
+            </p-floatLabel>     
+        </div>
+
+        <div class="col-6">
+            <p-floatLabel class="">
+                <input type="text" pInputText style="width: 100%;"/>
+                <label for="username">Min</label>
+            </p-floatLabel>    
+        </div>
+
+        <div class="col-6">
+            <p-floatLabel class="">
+                <input type="text" pInputText style="width: 100%;"/>
+                <label for="username">Max</label>
+            </p-floatLabel>    
+        </div>
+
+        <div class="col-12">
+            <p-slider [(ngModel)]="rangeValues" [range]="true" class="w-full"/>            
+        </div>
+    </div>
+
+    <!-- BUSQUEDA -->
+    <hr>
+    <h6 class="m-0 font-bold">Busqueda</h6> <br>
+    <div class="grid justify-content-center">
+        <div class="col-12">
+            <p-floatLabel class="col-12">
+                <p-dropdown 
+                    [options]="paymentOptions" 
+                    [style]="{'width':'100%'}" 
+                    optionLabel="name" 
+                    placeholder="Select a City" />
+                <label for="username">Opcion de Busqueda</label>
+            </p-floatLabel>  
+
+            <p-floatLabel class="col-12">
+                <input type="text" pInputText style="width: 100%;"/>
+                <label for="username">Buscar</label>
+            </p-floatLabel>
+        </div>
+
+    <!-- BOTONES -->
+    <hr>
+    <div class="col-12 flex justify-content-end">
+        <div class="flex flex-column align-items-center my-auto mx-1">
+            <p-button label="Limpiar" severity="danger"></p-button>
+        </div>
+        <div class="flex flex-column align-items-center my-auto mx-1">
+            <p-button label="Buscar" severity="success"></p-button>
+        </div>
+    </div>
+</div>

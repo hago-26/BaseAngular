@@ -1,0 +1,47 @@
+<form [formGroup]="FormBase">
+
+
+    <div class="grid col-12 md:col-12 lg:col-12">
+
+        <div class="col-12 md:col-4 lg:6 flex align-items-end">
+            <div class="text-center p-3 border-round-sm h-full">
+                <h6>Datos de la Persona:</h6>
+            </div>
+        </div>
+
+        <div class="grid col-12 md:col-8 lg:6">
+            <div class="col-12 md:col-12 lg:col-12">
+                <label [for]="">Nombre</label>
+                <input  formControlName="name"
+                        type="text" pInputText
+                        [style]="{'width':'100%', 'text-align':'center'}"
+                        [class.ng-invalid]="FormBase.get('name')?.invalid" 
+                        [class.ng-dirty]="FormBase.get('name')?.touched"
+                        />
+        
+            </div>
+        
+            <div class="col-12 md:col-6 lg:col-6">
+                <label [for]="">Edad</label>
+                <input  formControlName="email"
+                        type="text" pInputText
+                        [style]="{'width':'100%', 'text-align':'center'}"
+                        />
+        
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-6">
+                <label [for]="">Edad</label>
+                <input  formControlName="phone"
+                        type="text" pInputText
+                        [style]="{'width':'100%', 'text-align':'center'}"
+                        />
+        
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+
+
+</form>

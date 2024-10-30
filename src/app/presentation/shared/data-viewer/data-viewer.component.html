@@ -1,0 +1,24 @@
+<div class="grid justify-content-center main-container-wrapper gap-1" >
+
+    <!-- BARRA DE BUSQUEDA -->
+    <div class="col-12">
+        <app-search-bar></app-search-bar>
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="col-12 lg:col-12 xl:col-7 card">
+        <!-- TABLA DE RESULTADO -->
+        <app-generic-table [dataTable]="DataViewer?.dataTable"></app-generic-table>
+
+        <!-- PAGINACION -->
+        <app-pager [dataViewerHandler]="DataViewer"></app-pager>
+    </div>
+
+    <!-- FILTROS -->
+    <div *ngIf="!isMobile() && showFilters" class="col-12 lg:col-12 xl:col-4">
+        <app-filter-content></app-filter-content>
+    </div>
+
+    <app-filter-sidebar *ngIf="isMobile()"></app-filter-sidebar>
+
+</div>

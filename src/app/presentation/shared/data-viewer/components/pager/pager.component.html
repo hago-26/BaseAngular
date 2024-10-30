@@ -1,0 +1,8 @@
+<div *ngIf="dataTable" class="flex justify-content-center">
+    <p-paginator 
+        (onPageChange)="onPageChange($event)" 
+        [first]="dataTable._first" 
+        [rows]="dataTable._rows" 
+        [totalRecords]="dataTable._totalItems"
+         />
+</div>
